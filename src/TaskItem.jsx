@@ -1,12 +1,10 @@
- 
+// src/TaskItem.jsx
 import React from 'react';
 import classNames from 'classnames';
 
 function TaskItem({ task, deleteTask, toggleTaskCompletion, setTaskPriority }) {
   return (
-    <div
-      className={classNames("task-item", { completed: task.completed })}
-    >
+    <div className={classNames("task-item", { completed: task.completed })}>
       <input
         type="checkbox"
         checked={task.completed}
@@ -15,7 +13,7 @@ function TaskItem({ task, deleteTask, toggleTaskCompletion, setTaskPriority }) {
       <span className="task-title">{task.title}</span>
       <select
         value={task.priority}
-        onChange={(e) => setTaskPriority(task.id, e.target.value)}
+        onChange={(e) => setTaskPriority(task.id, e.target.value)} // Update priority
         className="priority-dropdown"
       >
         <option value="High">High</option>

@@ -1,4 +1,4 @@
- 
+// src/App.jsx
 import React, { useState, useEffect } from 'react';
 import TaskList from './TaskList';
 import TaskForm from './TaskForm';
@@ -7,13 +7,15 @@ import './index.css';
 function App() {
   const [tasks, setTasks] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
-  const [sortOption, setSortOption] = useState('priority');
+  const [sortOption, setSortOption] = useState('priority'); // Default sorting by priority
 
+  // Load tasks from local storage on first load
   useEffect(() => {
     const savedTasks = JSON.parse(localStorage.getItem('tasks'));
     if (savedTasks) setTasks(savedTasks);
   }, []);
 
+  // Save tasks to local storage whenever tasks change
   useEffect(() => {
     localStorage.setItem('tasks', JSON.stringify(tasks));
   }, [tasks]);
@@ -32,12 +34,14 @@ function App() {
     ));
   };
 
+  // **Function to Set Task Priority**
   const setTaskPriority = (id, priority) => {
     setTasks(tasks.map((task) =>
       task.id === id ? { ...task, priority } : task
     ));
   };
 
+  // **Sorting Logic**
   const sortedTasks = tasks
     .filter((task) => task.title.toLowerCase().includes(searchQuery.toLowerCase()))
     .sort((a, b) => {
