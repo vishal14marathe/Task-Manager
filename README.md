@@ -39,11 +39,27 @@
 ### Screenshots
 
 - **Main Screen**: Shows the main interface where users can add and manage tasks.
-  ![Main Screen](./screenshots/main-screen.png)
+  ![Main Screen](./screenshots/mainScreen.png)
 
-- **Sorting and Priority**: Demonstrates task sorting and priority settings.
-  ![Sorting and Priority](./screenshots/task-sorting.png)
+- **Priority**: Demonstrates task sorting and priority settings.
+  ![  Priority](./screenshots/priorityStatus.png)
 
+- **Task Complation status**: Demonstrates task complation settings.
+  ![Task Complation status](./screenshots/complationStatus.png)
+
+  
+- **Task Complation checkout**: Demonstrates task complation settings.
+  ![Task Complation status](./screenshots//ComplationCheckOut.png)
+
+  - **Delete task**: Demonstrates  Delete task settings.
+  ![Delete task](./screenshots/DeleteTask.png)
+
+  - **Serch Task**: Demonstrates Serch Task using serch box.
+  ![Serch Task](./screenshots/SerchTask.png)
+
+ 
+
+ 
 
 
 
