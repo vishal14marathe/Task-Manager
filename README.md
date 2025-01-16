@@ -1,4 +1,4 @@
-
+2. Live App- https://6bu4uz68gcmjl7zk.vercel.app/
 1.The application and functionality
 
   This Task Manager app is built using React and Vite. It allows users to manage their tasks with features like adding, deleting, marking tasks as complete, setting priority levels, and sorting tasks by priority or completion status. The app also includes UI animations to improve user experience, and it saves tasks to local storage to persist data across sessions.
